@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lampu Rumah</title>
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body id="body" onchange="button()">
+
+
+  <section class="main-container" id="ruang-tamu">
+    <div class="judul"><span class="text-white" id="judul-ruangTamu">RUANG TAMU</span></div>
+    <div class="content" id="content"> <!--Tempat LAMPU RUANG TAMU BERADA-->
+      <div class="item" id="divLampu-1"> <!-- LAMPU 1 RUANG TAMU -->
+        <img src="assets/images/off.gif" alt="" id="lampu-1" />
+        <label class="inline-flex items-center cursor-pointer" for="toggle-1">
+          <input type="checkbox" class="sr-only peer" id="toggle-1" onchange="saklarRT()" />
+          <div
+            class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600 mt-5">
+          </div>
+        </label>
+      </div>
+      <div class="item" id="divLampu-2"> <!-- LAMPU 2 RUANG TAMU -->
+        <img src="assets/images/off.gif" alt="" id="lampu-2" />
+        <label class="inline-flex items-center cursor-pointer" for="toggle-2">
+          <input type="checkbox" class="sr-only peer" id="toggle-2" onchange="saklarRT()" />
+          <div
+            class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600 mt-5">
+          </div>
+        </label>
+      </div>
+      <div class="item" id="divLampu-3"> <!-- LAMPU 3 RUANG TAMU -->
+        <img src="assets/images/off.gif" alt="" id="lampu-3" />
+        <label class="inline-flex items-center cursor-pointer" for="toggle-3">
+          <input type="checkbox" class="sr-only peer" id="toggle-3" onchange="saklarRT()" />
+          <div
+            class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600 mt-5">
+          </div>
+        </label>
+      </div>
+      <div class="item" id="divLampu-4"> <!-- LAMPU 4 RUANG TAMU -->
+        <img src="assets/images/off.gif" alt="" id="lampu-4" />
+        <label class="inline-flex items-center cursor-pointer" for="toggle-4">
+          <input type="checkbox" class="sr-only peer" id="toggle-4" onchange="saklarRT()" />
+          <div
+            class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600 mt-5">
+          </div>
+        </label>
+      </div>
+    </div>
+    <div class="btn" id="btn-ruangTamu"> <!-- saklar lampu Ruang Tamu -->
+      <button type="button" class="bok" onclick="saklarRTall('on')" id="saklar-ruangTamu">NYALAKAN</button>
+      <h2 class="text-white">LAMPU RUANG TAMU</h2>
+    </div>
+  </section>
+
+
+
+  <!-- Lampu ruang keluarga start -->
+  <section class="main-container" id="ruang-keluarga" style="margin-top: 50px;">
+    <div class="judul"><span class="text-white" id="judul-ruangKeluarga">RUANG KELUARGA</span></div>
+    <div class="content" id="content">
+
+
+      <!-- lampu RUANG KELUARGA 1 -->
+      <div class="item" id="divLampu-5" style="width: 33.3333%;">
+        <img src="assets/images/off.gif" alt="" id="lampu-5" />
+        <label class="inline-flex items-center cursor-pointer" for="toggle-5">
+          <input type="checkbox" class="sr-only peer" id="toggle-5" onchange="saklarRK()" />
+          <div
+            class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600 mt-5">
+          </div>
+        </label>
+      </div>
+
+      <!-- lampu RUANG KELUARGA 2 -->
+      <div class="item" id="divLampu-6" style="width: 33.3333%;">
+        <img src="assets/images/off.gif" alt="" id="lampu-6" />
+        <label class="inline-flex items-center cursor-pointer" for="toggle-6">
+          <input type="checkbox" class="sr-only peer" id="toggle-6" onchange="saklarRK()" />
+          <div
+            class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600 mt-5">
+          </div>
+        </label>
+      </div>
+
+      <!-- lampu RUANG KELUARGA 3 -->
+      <div class="item" id="divLampu-7" style="width: 33.3333%;">
+        <img src="assets/images/off.gif" alt="" id="lampu-7" />
+        <label class="inline-flex items-center cursor-pointer" for="toggle-7">
+          <input type="checkbox" class="sr-only peer" id="toggle-7" onchange="saklarRK()" />
+          <div
+            class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600 mt-5">
+          </div>
+        </label>
+      </div>
+
+
+    </div>
+    <!-- Saklar semua Lampu ruang keluarga -->
+    <div class="btn" id="btn-ruangKeluarga">
+      <button type="button" class="bok" onclick="saklarRKall('on')" id="saklar-ruangKeluarga">NYALAKAN</button>
+      <h2 class="text-white">LAMPU RUANG KELUARGA</h2>
+    </div>
+
+  </section> <!-- Lampu ruang keluarga end -->
+
+  <!-- lampu ruang makan -->
+  <section class="main-container" id="ruang-makan" style="margin-top: 50px;">
+    <div class="judul"><span class="text-white" id="judul-ruangMakan">RUANG MAKAN</span></div>
+    <div class="content" id="content-ruangMakan">
+
+      <!-- lampu ruang makan 1 -->
+      <div class="item" id="divLampu-8" style="width: 50%;">
+        <img src="assets/images/off.gif" id="lampu-8" />
+        <label class="inline-flex items-center cursor-pointer" for="toggle-8">
+          <input type="checkbox" class="sr-only peer" id="toggle-8" onchange="saklarRM()" />
+          <div
+            class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600 mt-5">
+          </div>
+        </label>
+      </div>
+
+      <!-- lampu ruang makan 2 -->
+      <div class="item" id="divLampu-9" style="width: 50%;">
+        <img src="assets/images/off.gif" id="lampu-9" />
+        <label class="inline-flex items-center cursor-pointer" for="toggle-9">
+          <input type="checkbox" class="sr-only peer" id="toggle-9" onchange="saklarRM()" />
+          <div
+            class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600 mt-5">
+          </div>
+        </label>
+      </div>
+    </div>
+    <!-- Saklar semua Lampu ruang makan -->
+    <div class="btn" id="btn-ruangMakan">
+      <button type="button" class="bok" onclick="saklarRMall('on')" id="saklar-ruangMakan">NYALAKAN</button>
+      <h2 class="text-white">LAMPU RUANG MAKAN</h2>
+    </div>
+  </section> <!-- ruang makan end -->
+
+  <!-- kamar tidur -->
+  <section class="main-container" id="kamar-tidur" style="margin-top: 50px;">
+    <div class="judul"><span class="text-white" id="judul-kamarTidur">KAMAR TIDUR</span></div>
+    <div class="content">
+      <!-- lampu kamar tidur -->
+      <div class="item" id="divLampu-0" style="width: 50%;">
+        <img src="assets/images/off.gif" alt="" id="lampu-0" />
+        <label class="inline-flex items-center cursor-pointer" for="toggle-0">
+          <input type="checkbox" class="sr-only peer" id="toggle-0" onchange=" saklarKT()" />
+          <div
+            class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600 mt-5">
+          </div>
+        </label>
+      </div>
+      <div class="btn" id="btn-saklarUtama">
+        <button type="button" class="bok" onclick="saklarUtama('on')" id="saklar-utama">NYALAKAN</button>
+        <h2 class="text-white">SEMUA LAMPU RUMAH</h2>
+        </div>
+    </div>
+
+
+  </section> <!-- lampu tidur end -->
+
+  <!-- ARGO UTAMA -->
+
+  <!-- ini adalah script js kita -->
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+  <script src="assets/script.js"></script>
+</body>
+
+</html>
